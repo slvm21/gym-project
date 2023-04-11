@@ -11,14 +11,14 @@ const Exercises = ({ exercises, setExerCises, bodyPart }) => {
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
-
+  // const currentExercises = 5;
 
   const paginate = (event, value) => {
     setCurrentPage(value);
 
     window.scrollTo({ top: 1800, behavior: 'smooth' });
   };
-
+// 
 
 
   useEffect(() => {
